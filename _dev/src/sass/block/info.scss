@@ -1,0 +1,43 @@
+.info {
+    margin-top: 75px;
+    &__block {
+        display: flex;
+        text-align: center; 
+        gap: 58px;
+        min-height: 243px;
+    }
+}
+
+.block {
+    svg{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    &__icon-1{
+        background-color: #fd845828;
+    }
+    &__icon-2{
+        background-color: #3A0F731A;
+    }
+    &__icon-3{
+        background-color: #70B4461A;
+    }
+    &__title {
+        padding: 20px 0;
+    }
+    &__label {
+        color: $contentColor;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1024px){
+    .block{
+        padding-bottom: 100px;
+        flex-direction: column;
+        &__label {
+            font-size: 1.3em;
+            padding: 0 10%;
+        }
+    }
+}

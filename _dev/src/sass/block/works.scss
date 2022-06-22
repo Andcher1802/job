@@ -1,0 +1,32 @@
+.works {
+
+    &__portfolio {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__author {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__author-photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: #FD855833;
+    }
+
+    &__view {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    &__box-2{
+    display: flex;
+    align-items: center;
+    }
+}

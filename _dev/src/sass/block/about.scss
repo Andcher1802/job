@@ -1,0 +1,118 @@
+@import '../chunk/var';
+.about {
+    padding-bottom: 190px;
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__first-box {
+        width: 50%;
+    }
+
+    &__label {
+        padding-top: 50px;
+        font-size: 40px;
+        line-height: 54px;
+
+    }
+
+    &__second-box {
+        padding-bottom: 112px;
+        width: 50%;
+        h3{
+            font-size: 18px;
+            line-height: 28px;
+        }
+        p{
+            font-size: 15px;
+            color: $contentColor;
+            line-height: 25.5px;
+        }
+    }
+
+    &__third-box {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    &__quote{
+        padding-left: 65px;
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+        span{
+            color: $mainColor;
+            font-style: italic;
+        }
+    }
+    &__author-quote{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        p{
+            &:last-child{
+                color: $contentColor;
+                font-size: 12px;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .block-name{
+        font-size: 40px;
+    }
+    .about {
+        padding-bottom: 0px;
+        box-shadow: 0 0 5px #000;
+        &__block {
+            text-align: center;
+        }
+        
+        &__first-box {
+            padding: 20px 10px 40px 10px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        &__label {
+            font-size: 2em;
+            line-height: 40px;
+        }
+    
+        &__second-box {
+            padding-bottom:50px;
+            width: 80%;
+            margin: 0 auto;
+            h3{
+                padding: 0 10px;
+                padding-bottom: 30px;
+            }
+        }
+    
+        &__third-box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                box-shadow: 0 1px 5px #000;
+            }
+        }
+        &__quote{
+            padding:20px 10%;
+            font-size: 18px;
+            gap: 30px;
+        }
+        &__author-quote{
+            font-size: 18px;
+        }
+    }
+}

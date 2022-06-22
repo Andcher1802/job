@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    &__logo {
+        display: flex;
+        padding: 22.5px 10px;
+
+    }
+
+    &__items {
+        width: 100%;
+        gap: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color: $labelColor;
+            transition: 0.3s all ease;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+}
+.popup{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .header{
+        padding: 0;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        box-shadow: 0 0px 10px #000;
+        &__items {
+            display: none;
+        }
+    }
+    .burger {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        &__field {
+            margin-right: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+		&__bar {
+            display: block;
+            height: 2px;
+            width: 35px;
+            margin: 8px auto;
+            background-color: #222;
+            transition: 0.5s;
+		}
+    }
+    .active{
+        .burger__bar{
+            &:first-child{
+                transform: translateY(10px) rotate(405deg);
+                box-shadow: 1px 1px 5px #666;
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:last-child{
+                transform: translateY(-10px) rotate(-405deg);
+                box-shadow: 1px 1px 5px #666;
+            }
+            
+        }
+    }
+    .popup{
+        display: flex;
+        position: fixed;
+        top: 63px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 9;
+        display: flex;
+        transition: 0.3s;
+        &__items{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 20px;
+            gap: 20px;
+            overflow: auto;
+            li{
+                text-align: center;
+                padding: 5px 0;
+                width: 100%;
+            }
+            a{
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                color: $labelColor;
+                font-size: 20px;
+            }
+        }
+    }
+    .open{
+        left: 0;
+    }
+}

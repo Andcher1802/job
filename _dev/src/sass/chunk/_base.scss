@@ -1,0 +1,54 @@
+@import './var';
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;    
+}
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    h1{
+        font-weight: normal;
+    }
+    h2{
+        font-weight: normal;
+    }
+    h3{
+        font-weight: normal;
+    }
+}
+.noSroll{
+    overflow:hidden !important;
+}
+.btn{
+    color: #fff;
+    background-color: $mainColor;
+    font-weight: bold;
+    padding: 13px 40px;
+    cursor: pointer;
+    transition: 0.3s background-color ease;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0);
+        outline: 2px solid $mainColor;
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+}
+.block-name{
+    font-size: 145px;
+    color: $blockNameColor;
+    user-select: none;
+}
+.title{
+    color: $mainColor;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hide{
+    display: none !important; 
+}

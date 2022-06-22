@@ -1,5 +1,2 @@
-const async = require('./module/async')
-
-// Test command
-console.log('working')
-
+import { BurgerComponent } from "./components/burger.component"
+const burger = new BurgerComponent('burger')
