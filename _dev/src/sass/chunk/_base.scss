@@ -1,5 +1,7 @@
 @import './var';
-
+html{
+    height: 100%;
+}
 .wrapper{
     margin: 0 auto;
     max-width: 1440px;    
@@ -10,26 +12,19 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    h1{
-        font-weight: normal;
-    }
-    h2{
-        font-weight: normal;
-    }
-    h3{
+    h1,h2,h3{
         font-weight: normal;
     }
 }
-.noSroll{
-    overflow:hidden !important;
-}
+
+
 .btn{
     color: #fff;
     background-color: $mainColor;
     font-weight: bold;
     padding: 13px 40px;
     cursor: pointer;
-    transition: 0.3s background-color ease;
+    transition: 0.3s all ease;
     &:hover{
         background-color: rgba(255, 255, 255, 0);
         outline: 2px solid $mainColor;
@@ -42,6 +37,9 @@ body{
     font-size: 145px;
     color: $blockNameColor;
     user-select: none;
+    &__works{
+        text-align: right;
+    }
 }
 .title{
     color: $mainColor;
@@ -51,4 +49,9 @@ body{
 }
 .hide{
     display: none !important; 
+}
+.text{
+    font-size: 15px;
+    color: $contentColor;
+    line-height: 25.5px;
 }

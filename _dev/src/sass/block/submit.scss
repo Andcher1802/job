@@ -1,0 +1,149 @@
+.submit {
+
+    // .submit__block
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    // .submit__info
+
+    &__info {
+
+    }
+
+    // .submit__info-box
+
+    &__info-box {
+        padding-bottom: 45px;
+
+    }
+
+    // .submit__box-title
+
+    &__box-title {
+        color: rgba(34, 34, 34, 0.4);
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    // .submit__box-label
+
+    &__box-label {
+        color: $labelColor;
+        font-weight:400;
+        font-size: 24px;
+        line-height: 33px;
+    }
+          // .submit__form  
+    &__form{
+        width: 705px;
+        height: 342px;
+        textarea{
+            color: $contentColor;
+            border: 1px solid $inputColor;
+            padding:20px 40px;
+            width: 625px;
+            height: 88px;
+            resize: none;
+        }
+    }
+    &__form-person{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+ 
+        // .submit__form-btn
+    
+        &__form-btn {
+            margin-top: 65px;
+              &:hover{
+        color: $mainColor;
+    }
+        }
+}
+.name , .email {
+            color: $contentColor;
+            border: 1px solid $inputColor;
+            padding:20px 40px;
+            width: 35%;
+}
+
+
+@media (max-width:1024px){
+    .submit {
+
+        // .submit__block
+    
+        &__block {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        // .submit__info
+    
+        &__info {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            gap: 5%;
+    
+        }
+    
+        // .submit__info-box
+    
+        &__info-box {    
+        }
+    
+        // .submit__box-title
+    
+        &__box-title {
+        }
+    
+        // .submit__box-label
+    
+        &__box-label {
+            font-size: 20px;
+        }
+              // .submit__form  
+        &__form{
+            width: 95%;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            textarea{
+                width: 80%;
+                height: 100px;
+            }
+            
+        }
+        &__form-person{
+            max-height: max-content;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            // margin-bottom: 30px;
+            // gap: 40px;
+        }
+     
+            // .submit__form-btn
+        
+            &__form-btn {
+                margin-top: 65px;
+            }
+    }
+    .name , .email {
+        padding:20px 40px;
+        width: 80%;
+        margin-top: 10px;
+}
+}

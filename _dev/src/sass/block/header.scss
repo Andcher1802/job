@@ -98,9 +98,16 @@
             gap: 20px;
             overflow: auto;
             li{
+                text-transform: uppercase;
                 text-align: center;
-                padding: 5px 0;
+                padding: 5px 5px;
                 width: 100%;
+                transition: 0.3s ease all;
+                &:hover{
+                    box-shadow: 0 0 3px rgb(87, 87, 87);
+                    transform: scale(1.1);
+                }
+
             }
             a{
                 &:hover{

@@ -14,6 +14,4 @@ function burgerHandler(event){
     event.preventDefault()
     this.$el.classList.toggle('active')
     $popup.classList.toggle('open')
-    $body.classList.toggle('noScroll')
-    console.log($body)
 }

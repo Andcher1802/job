@@ -1,20 +1,26 @@
 .works {
-
     &__portfolio {
-        height: 500px;
+        min-height:500px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
     &__author {
+        span{
+            height: 2px;
+            width: 50%;
+            background-color: #F5F5F5;
+        }
+        gap: 4%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     &__author-photo {
-        width: 64px;
-        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
         border-radius: 50%;
         background-color: #FD855833;
     }
@@ -28,5 +34,36 @@
     &__box-2{
     display: flex;
     align-items: center;
+    button{
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    }
+}
+
+@media (max-width:1024px){
+    .works {
+        &__portfolio {
+            height: 300px;
+            justify-content: space-between;
+        }
+
+        &__view {
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 35px;
+        }
+        &__author {
+            span{
+                width:30%;
+                background-color: #F5F5F5;
+            }
+            gap: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

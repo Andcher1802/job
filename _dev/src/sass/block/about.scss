@@ -24,11 +24,7 @@
             font-size: 18px;
             line-height: 28px;
         }
-        p{
-            font-size: 15px;
-            color: $contentColor;
-            line-height: 25.5px;
-        }
+
     }
 
     &__third-box {
@@ -63,7 +59,6 @@
         }
     }
 }
-
 @media (max-width: 1024px) {
     .block-name{
         font-size: 40px;
@@ -76,7 +71,7 @@
         }
         
         &__first-box {
-            padding: 20px 10px 40px 10px;
+            padding: 20px 5px 40px 5px;
             width: 100%;
             text-align: center;
         }
@@ -91,7 +86,7 @@
             width: 80%;
             margin: 0 auto;
             h3{
-                padding: 0 10px;
+                padding: 0 5px;
                 padding-bottom: 30px;
             }
         }

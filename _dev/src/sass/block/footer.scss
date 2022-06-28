@@ -1,0 +1,154 @@
+.footer {
+    background-color: $footerBgColor;
+
+    // .footer__block
+
+    &__block {
+        color: $footerColor;
+        min-height: 447px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    // .footer__block-nav
+
+    &__block-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__nav-logo-info
+
+    &__block-nav-logo{
+        min-width: 30%;
+    }
+
+    &__nav-logo-info {
+        a{
+            color: $footerColor;
+            padding-right:0px;
+            &:hover{
+                color: #fff;
+            }
+        }
+        span{
+            padding: 0 15px;
+            user-select: none;
+        }
+        display: flex;
+        padding-top: 30px;
+    }
+
+    // .footer__info
+
+    &__info {
+        text-align: center;
+        line-height: 30px;
+        padding: 50px 10px;
+        a{
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+    		// .footer__nav-menu
+
+		&__nav-menu {
+            display: flex;
+            gap: 90px;
+            a{
+                color: $footerColor;
+                &:hover{
+                    color: #fff;
+                }
+            }
+		}
+
+
+		// .footer__nav-label
+
+		&__nav-label {
+            font-size: 24px;
+            padding-bottom: 20px;
+		}
+
+		// .footer__nav-link
+
+		&__nav-link {
+            line-height: 30px;
+		}
+}
+
+@media (max-width:1024px){
+    .footer{
+    &__block {
+        padding: 0 5%;
+    }
+    &__block-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    &__block-nav-logo{
+        min-width: 30%;
+        padding: 50px 0;
+    }
+    &__nav-logo-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        a{
+            color: $footerColor;
+            padding-right:0px;
+            &:hover{
+                color: #fff;
+            }
+        }
+        span{
+            padding: 0 15px;
+            user-select: none;
+        }
+        display: flex;
+        padding-top: 30px;
+    }
+
+    &__nav-menu {
+        gap:80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            color: $footerColor;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    &__info {
+        border-top: 1px solid $footerColor;
+    }
+    &__nav-label {
+        padding-bottom: 15px;
+    }
+
+    // .footer__nav-link
+
+    &__nav-link {
+        li{
+            padding: 5px 30px;
+            margin: 10px;
+            &:hover{
+                background-color: #313131a2;
+            }
+        }
+        line-height: 25px;
+    }
+}
+}
